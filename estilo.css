@@ -1,0 +1,266 @@
+/******************************************
+Este css não valida por causa dos hacks para a merda do IE.
+Qualquer dia desses, eu mudo os hacks para o css validar.
+******************************************/
+
+
+/** Zerando todos os margins naturais para não atrapalhar **/
+body, h1, h2, h3, h4, h5, h6, form, dl, ul, ol, dt, dd, p, address {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	text-align:center;
+	background:#F4F4F4;
+}
+
+img {border:0px;}
+
+/** Spans que vão sumir **/
+#cabecalho h1 a span, address a span {
+	display:none;
+}
+
+/** Div GERAL - O mestre! **/
+#geral {
+	width:758px;
+	margin:0px auto;
+	padding-top:93px;
+	_padding-top:20px;
+	text-align:left;
+}
+
+html>body #geral {
+	background:#F4F4F4 url(imagens/biglogo.gif) no-repeat 240px 30px;
+}
+/** Fim do div Geral **/
+
+/** Cabecalho - Logo e Menu **/
+#cabecalho {
+	background:url(imagens/fundocab.png) repeat-X top right;
+	_background:url(imagens/fundocab.gif) repeat-X top right;
+	position:relative;
+	height:105px;
+}
+
+#cabecalho h1 {
+	padding:30px 0px 0px 30px;
+}
+
+#cabecalho h1 a {
+	display:block;
+	width:217px;
+	height:50px;
+	background:url(imagens/logotableless.gif) no-repeat top left;
+	_background:url(imagens/logotableless1.gif) no-repeat top left;
+}
+
+#cabecalho ul {
+	list-style:none;
+	position:absolute;
+	bottom:22px;
+	right:0px;
+	width:450px;
+}
+
+#cabecalho ul li {display:inline;}
+
+#cabecalho ul li a {
+	font:70% Verdana, Arial, Tahoma, 'Sans-Serif';
+	color:black;
+	text-decoration:none;
+	display:block;
+	float:left;
+	padding:0px 7px;
+}
+
+#cabecalho ul li a:hover {color:#EA0000;}
+/** Fim do Cabecalho! **/
+
+/** Conteúdo **/
+#corpo {
+	width:755px;
+	/*background:url(imagens/sobrasbordas.png) repeat-Y top center;*/
+	background:url(imagens/sobrasbordas.gif) repeat-Y top center;
+}
+
+#corpo #esquerda, #corpo #direita {
+	float:left;
+}
+
+/** Esquerda - Conteúdo **/
+#corpo #esquerda {
+	width:484px;
+	_width:524px;
+	padding:15px 0px 20px 30px;
+}
+
+#corpo #esquerda p {
+	font: 70% Verdana, Arial, Tahoma, 'Sans-Serif';
+	margin:0px 0px 10px;
+	line-height:15px;
+	color:#494949;
+}
+
+#corpo #esquerda h2 {
+	font:140% Georgia, Times New Roman, 'Serif';
+	color:#EA0000;
+	margin:5px 0px 0px;
+	clear:both;
+}
+
+#corpo #esquerda h2 small {
+	display:block;
+	font:50% Georgia, Times New Roman, 'Serif';
+}
+
+#corpo #esquerda h3 {
+	font:100% Georgia, Times New Roman, 'Serif';
+	color:#EA0000;
+}
+
+#corpo #esquerda cite {
+	font:italic 100% Verdana, Arial, Tahoma, 'Sans-Serif';
+	margin:10px 15px;
+	display:block;
+	line-height:15px;
+}
+
+#corpo #esquerda ul {
+	font: 70% Verdana, Arial, Tahoma, 'Sans-Serif';
+	width:450px;
+	margin-left:15px;
+}
+
+#corpo #esquerda ul li {
+	margin-bottom:10px;
+}
+
+#corpo #esquerda hr {
+	margin:20px 0px;
+}
+
+div.rodapost {
+	font:60% Verdana, Arial, Tahoma, 'Sans-Serif';
+	width:484px;
+	height:20px;
+	color:#EA0000;
+	padding-bottom:20px;
+}
+
+div.rodapost a {
+	color:#EA0000;
+	text-decoration:none;
+}
+
+div.rodapost span {
+	padding:7px 10px;
+}
+
+div.rodapost span.post {
+	float:left;
+	background:url(imagens/fundopost.gif) no-repeat top left;
+}
+div.rodapost span.comente {
+	float:right;
+	background:url(imagens/fundcoment.gif) no-repeat top right;
+}
+
+/** Direito - Busta e Histórico **/
+#corpo #direita {
+	width:190px;
+	margin-left:35px;
+}
+
+#corpo #direita h3 {
+	font:110% Georgia, Times New Roman, 'Serif';
+	color:#EA0000;
+	margin:15px 0px 0px;
+	clear:both;
+}
+
+#corpo #direita ul {
+	list-style:none;
+	margin-left:5px;
+}
+
+#corpo #direita ul li a {
+	color:#494949;
+	text-decoration:none;
+	font:70% Verdana, Arial, Tahoma, 'Sans-Serif';
+}
+
+#corpo #direita ul li a:hover {color:#EA0000;}
+
+#corpo #direita input.busca {
+	border:1px solid #DBDBDB;
+	width:170px;
+}
+
+#corpo #direita input.botbusca {
+	float:right;
+	margin:5px 35px 10px 0px;
+}
+
+
+/*** Tabela de dados comparativos ***/
+table.dadoscomp {
+	width:100%;
+	font:70% Verdana, Arial, Tahoma, 'Sans-Serif';
+	color:#494949;
+	margin-top:30px;
+}
+
+table.dadoscomp tr.logosite th {
+	text-align:center;
+	border:0px;
+	padding-bottom:7px;
+}
+
+table.dadoscomp tr.degrade th {
+	padding:7px;
+	border:0px;
+}
+
+table.dadoscomp tr.degrade th.pri {background:url(imagens/degradeconvert.gif) repeat-Y top left;}
+table.dadoscomp tr.degrade {background:#E2E2E2;}
+
+table.dadoscomp th, table.dadoscomp tr td {
+	border-bottom:1px solid #C1C1C1;
+	text-align:left;
+	padding:10px;
+}
+
+table.dadoscomp tr td a.baixar {
+	display:block;
+	padding:5px 30px;
+	background:url(imagens/zip.gif) no-repeat;
+}
+
+/** Rodape **/
+address {
+	clear:both;
+	text-align:center;
+	padding:85px 0px 0px;
+	_padding:85px 0px 20px;
+	height:80px;
+	_height:150px;
+	background:#F4F4F4 url(imagens/bordabaixogeral.gif) no-repeat top center;
+	font:60% Verdana, Arial, 'Sans-Serif';
+}
+
+address a {
+	display:block;
+	width:82px;
+	height:23px;
+	margin:0px auto 5px;
+	text-decoration:none;
+	background:url(imagens/tablelessbaixo.gif) no-repeat;
+}
+
+#sombrinha {
+	width:755px;
+	background:url(imagens/fundodiresq.png) no-repeat top center;
+	_background:url(imagens/fundodiresq.gif) no-repeat top center;
+}
